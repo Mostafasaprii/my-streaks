@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY STREAKS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <!-- ربط ملف CSS -->
+</head>
+<body>
+
+    <!-- زر فتح القائمة الجانبية -->
+    <div class="menu-btn" onclick="toggleMenu()">
+        <i class="fa-solid fa-bars"></i>
+    </div>
+
+    <!-- القائمة الجانبية -->
+    <div class="sidebar" id="sidebar">
+        <ul>
+            <li onclick="toggleMenu()"><i class="fa-solid fa-times"></i> إغلاق</li>
+            <li><i class="fa-solid fa-home"></i> الصفحة الرئيسية</li>
+            <li><i class="fa-solid fa-fire"></i> ستريكات</li>
+            <li><i class="fa-solid fa-bell"></i> الإشعارات</li>
+            <li><i class="fa-solid fa-comments"></i> الدردشة</li>
+            <li><i class="fa-solid fa-cog"></i> الإعدادات</li>
+            <li class="logout"><i class="fa-solid fa-sign-out-alt"></i> تسجيل الخروج</li>
+        </ul>
+    </div>
+
+    <!-- الشريط العلوي -->
+    <div class="navbar">
+        <h2><i class="fa-solid fa-fire"></i> MY STREAKS</h2>
+        <input type="text" id="search-box" class="search-box" placeholder="بحث...">
+        <div class="icons">
+            <i class="fa-solid fa-bell"></i>
+            <i class="fa-solid fa-user"></i>
+        </div>
+    </div>
+
+    <!-- قسم القصص -->
+    <div class="stories">
+        <div class="story" onclick="addStory()">
+            <i class="fa-solid fa-plus"></i>
+            <p>إضافة قصة</p>
+        </div>
+        <div class="story-list" id="story-list"></div>
+    </div>
+
+    <!-- قسم التحميل -->
+    <div class="loading">
+        <i class="fa-solid fa-spinner fa-spin"></i>
+    </div>
+
+    <!-- قسم المستخدمين -->
+    <div class="user-box">
+        <h3><i class="fa-solid fa-user"></i> user2</h3>
+    </div>
+
+    <!-- زر إرسال الستريك -->
+    <div class="streak-button">
+        <button onclick="sendStreak()"><i class="fa-solid fa-fire"></i> أرسل ستريك</button>
+    </div>
+
+    <!-- زر تغيير الوضع الليلي -->
+    <div class="theme-toggle" onclick="toggleTheme()">
+        <i class="fa-solid fa-moon"></i> وضع ليلي
+    </div>
+
+    <!-- إشعارات فورية -->
+    <div id="toast-container"></div>
+
+    <!-- قسم الدردشة -->
+    <div class="chat-box" id="chat-box">
+        <h3>الدردشة</h3>
+        <div class="messages" id="messages"></div>
+        <input type="text" id="chat-input" placeholder="اكتب رسالة...">
+        <button onclick="sendMessage()"><i class="fa-solid fa-paper-plane"></i></button>
+    </div>
+
+    <!-- كود جافا سكريبت -->
+    <script src="script.js"></script>
+
+</body>
+</html>

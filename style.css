@@ -1,0 +1,153 @@
+/* تنسيق عام */
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: right;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* الشريط العلوي */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #ff5722;
+    color: white;
+    padding: 10px;
+}
+
+.search-box {
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+}
+
+/* القائمة الجانبية */
+.sidebar {
+    position: fixed;
+    right: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #333;
+    color: white;
+    transition: 0.3s;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #444;
+}
+
+.sidebar ul li:hover {
+    background: #444;
+}
+
+/* زر القائمة */
+.menu-btn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    background: #ff5722;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
+
+/* قسم الستريك */
+.streak-button {
+    text-align: center;
+    margin: 20px;
+}
+
+.streak-button button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.streak-button button:hover {
+    background: #e64a19;
+}
+
+/* الوضع الليلي */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #222;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* إشعارات فورية */
+#toast-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+/* صندوق الدردشة */
+.chat-box {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    background: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+
+.messages {
+    height: 200px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+#chat-input {
+    width: 80%;
+    padding: 5px;
+}
+
+/* الملف الشخصي */
+.profile {
+    text-align: center;
+    padding: 20px;
+}
+
+.profile button {
+    background: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile button:hover {
+    background: #e64a19;
+}
